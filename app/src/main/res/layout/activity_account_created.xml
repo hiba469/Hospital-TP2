@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/hospital_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp"
+        android:background="@color/hospital_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✓"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@color/hospital_teal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Created!"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/hospital_dark_blue"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/accountMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your account has been created successfully!"
+            android:textSize="16sp"
+            android:textColor="@color/hospital_text"
+            android:gravity="center"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/accountUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/hospital_secondary_text"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/goToLoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to Login"
+            android:textColor="@color/hospital_white"
+            android:backgroundTint="@color/hospital_blue"
+            android:layout_marginTop="25dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

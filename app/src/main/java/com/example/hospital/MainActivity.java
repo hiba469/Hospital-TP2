@@ -49,10 +49,18 @@ public class MainActivity extends AppCompatActivity {
 
         main.setOnClickListener(v -> {
 
+            Bundle bundle = new Bundle();
+            bundle.putString(
+                    "message",
+                    "Welcome to the Hospital App"
+            );
+
             Intent intent = new Intent(
                     MainActivity.this,
                     LoginActivity.class
             );
+
+            intent.putExtras(bundle);
 
             startActivity(intent);
         });
