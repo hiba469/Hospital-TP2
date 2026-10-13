@@ -38,6 +38,17 @@
         <activity
             android:name=".AccountCreatedActivity"
             android:exported="false" />
+        <activity
+            android:name=".ConfirmationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AppointmentActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DoctorListActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

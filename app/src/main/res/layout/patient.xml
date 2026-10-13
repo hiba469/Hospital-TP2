@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -17,6 +16,7 @@
         android:textColor="@color/hospital_dark_blue"
         android:layout_marginBottom="8dp" />
 
+    <!-- Welcome message -->
     <TextView
         android:id="@+id/patientWelcome"
         android:layout_width="wrap_content"
@@ -26,48 +26,13 @@
         android:textColor="@color/hospital_secondary_text"
         android:layout_marginBottom="20dp" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:background="@color/hospital_white">
-
-        <TextView
-            android:id="@+id/doctorsTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="My Doctors"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/hospital_dark_blue" />
-
-        <TextView
-            android:id="@+id/doctor1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/doctorsTitle"
-            android:layout_marginTop="12dp"
-            android:text="Dr. Ahmed - Cardiologist"
-            android:textSize="16sp"
-            android:textColor="@color/hospital_text" />
-
-        <TextView
-            android:id="@+id/doctor2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/doctor1"
-            android:layout_marginTop="8dp"
-            android:text="Dr. Sara - General Practitioner"
-            android:textSize="16sp"
-            android:textColor="@color/hospital_text" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
+    <!-- Upcoming appointments -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:padding="20dp"
+        android:orientation="vertical"
         android:background="@color/hospital_white">
 
         <TextView
@@ -79,25 +44,50 @@
             android:textStyle="bold"
             android:textColor="@color/hospital_dark_blue" />
 
-        <TextView
-            android:id="@+id/appointment1"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/appointmentList"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/appointmentsTitle"
-            android:layout_marginTop="12dp"
-            android:text="05/10/2026 - 10:00 - Dr. Ahmed"
-            android:textSize="16sp"
-            android:textColor="@color/hospital_text" />
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
 
-        <TextView
-            android:id="@+id/appointment2"
+            <TextView
+                android:id="@+id/appointment1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="05/10/2026 - 10:00 - Dr. Ahmed"
+                android:textSize="16sp"
+                android:textColor="@color/hospital_text"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/appointment2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12/10/2026 - 14:30 - Dr. Sara"
+                android:textSize="16sp"
+                android:textColor="@color/hospital_text"
+                android:paddingBottom="8dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Book an appointment button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="20dp"
+        android:background="@color/hospital_white">
+
+        <Button
+            android:id="@+id/AppointmentButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/appointment1"
-            android:layout_marginTop="8dp"
-            android:text="12/10/2026 - 14:30 - Dr. Sara"
-            android:textSize="16sp"
-            android:textColor="@color/hospital_text" />
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/hospital_blue"
+            android:text="Book an appointment"
+            android:textColor="@color/hospital_white" />
 
     </RelativeLayout>
 
